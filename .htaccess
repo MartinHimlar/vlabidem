@@ -1,5 +1,16 @@
 ## Default .htaccess file
 
+# HTTPS and www: everything goes to https://www.vlabidem.cz
+# (X-Forwarded-Proto covers TLS terminated in front of Apache)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+  RewriteRule ^ https://www.vlabidem.cz%{REQUEST_URI} [R=301,L]
+  RewriteCond %{HTTP_HOST} ^vlabidem\.cz$ [NC]
+  RewriteRule ^ https://www.vlabidem.cz%{REQUEST_URI} [R=301,L]
+</IfModule>
+
 ErrorDocument 404 /404.html
 Redirect 301 /commisions.html /commissions.html
 
@@ -25,6 +36,8 @@ Redirect 301 /commisions.html /commissions.html
   Header always set X-Frame-Options "SAMEORIGIN"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
   Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  # Start with one day; raise to a year (31536000) once HTTPS has run without problems
+  Header always set Strict-Transport-Security "max-age=86400" env=HTTPS
 </IfModule>
 
 # Build sources are not part of the site; block them if uploaded by mistake

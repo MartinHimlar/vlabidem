@@ -1,6 +1,6 @@
 # vlabidem
 
-Web účetní kanceláře VLABIDEM s.r.o., [www.vlabidem.cz](http://www.vlabidem.cz/).
+Web účetní kanceláře VLABIDEM s.r.o., [www.vlabidem.cz](https://www.vlabidem.cz/).
 
 Statické HTML stránky s [Bootstrapem 5](https://getbootstrap.com/) (lokální kopie, bez jQuery).
 Na serveru neběží nic než Apache se statickými soubory.

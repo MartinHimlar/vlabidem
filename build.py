@@ -23,7 +23,7 @@ import html
 import pathlib
 import sys
 
-BASE_URL = 'http://www.vlabidem.cz/'
+BASE_URL = 'https://www.vlabidem.cz/'
 NAV = [
     ('index.html', 'Hlavní stránka'),
     ('taxes.html', 'Daně'),
