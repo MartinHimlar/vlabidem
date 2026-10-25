@@ -31,3 +31,7 @@ h1, h2, h3, h4, h5, h6{
     background-color: #410b88;
     border-color: #410b88;
 }
+.map-section {
+    width: 90%;
+    margin: 0 auto 1.5rem;
+}
