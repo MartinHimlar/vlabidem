@@ -26,3 +26,6 @@ Redirect 301 /commisions.html /commissions.html
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
   Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
 </IfModule>
+
+# Build sources are not part of the site; block them if uploaded by mistake
+RedirectMatch 404 ^/(src/|build\.py$|README\.md$|LICENSE$)

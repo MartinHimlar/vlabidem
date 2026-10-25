@@ -3,7 +3,22 @@
 Web účetní kanceláře VLABIDEM s.r.o., [www.vlabidem.cz](http://www.vlabidem.cz/).
 
 Statické HTML stránky s [Bootstrapem 5](https://getbootstrap.com/) (lokální kopie, bez jQuery).
-Nic se nesestavuje: co je v repozitáři, nahrává se na hosting.
+Na serveru neběží nic než Apache se statickými soubory.
+
+## Úpravy stránek
+
+Menu, hlavička a patička jsou jen jednou v `src/layout.html`, obsah každé
+stránky v `src/pages/<stránka>.html` (nahoře titulek a popis pro vyhledávače).
+Stránky v kořeni repa se z nich generují **lokálně**:
+
+```sh
+python3 build.py          # přegeneruje stránky v kořeni
+python3 build.py --check  # jen ověří, že jsou aktuální
+```
+
+Stačí Python 3 bez dalších balíčků. Vygenerované stránky se commitují;
+na server se nahrávají ony, ne `src/` ani `build.py` (`.htaccess` je i tak blokuje).
+Nová stránka do menu: doplnit ji do `NAV` v `build.py`.
 
 ## Struktura
 
@@ -20,8 +35,6 @@ Nic se nesestavuje: co je v repozitáři, nahrává se na hosting.
 | `.htaccess` | konfigurace Apache (chybová stránka, přesměrování) |
 | `robots.txt`, `sitemap.xml` | pro vyhledávače |
 
-Menu a patička jsou zkopírované v každé stránce – při změně je upravte všude.
-
 ## Nasazení
 
 Hosting Yellowpoint, FTP `host4.yellowpoint.cz`, web je v adresáři `/web`. Server podporuje jen FTPS:
@@ -30,5 +43,5 @@ Hosting Yellowpoint, FTP `host4.yellowpoint.cz`, web je v adresáři `/web`. Ser
 curl --ssl-reqd -u UZIVATEL -T soubor.html ftp://host4.yellowpoint.cz/web/soubor.html
 ```
 
-Nahrávají se jen soubory webu (ne `README.md`, `LICENSE`, `.gitignore`).
+Nahrávají se jen soubory webu (ne `src/`, `build.py`, `README.md`, `LICENSE`, `.gitignore`).
 Do repozitáře se mění přes pull requesty a na web se nahrává až sloučený `master`.
