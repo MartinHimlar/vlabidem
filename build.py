@@ -14,7 +14,8 @@ A page source starts with a front matter block:
 
 Optional keys: `noindex: yes` (no indexing, no Open Graph) and `root: /`
 (prefix for asset and menu links, for pages served at any URL depth).
-The rest is the page body (between the header and the footer). It may end
+The rest is the page body, placed inside <main> between the header and
+the footer. It may end
 with `<!-- @head -->` and/or `<!-- @scripts -->` blocks that go into <head>
 and after the Bootstrap script.
 """
@@ -25,7 +26,7 @@ import sys
 
 BASE_URL = 'http://www.vlabidem.cz/'
 NAV = [
-    ('index.html', 'Hlavní stránka'),
+    ('index.html', 'Úvod'),
     ('taxes.html', 'Daně'),
     ('economy.html', 'Účetnictví'),
     ('wages.html', 'Mzdy'),
@@ -57,7 +58,8 @@ def render(name, text, layout):
         head_meta = ['    <meta name="robots" content="noindex">']
     else:
         head_meta = [f'    <meta name="description" content="{attr(meta["description"])}">']
-    head_meta.append(f'    <link rel="icon" href="{root}favicon.ico">')
+    head_meta.append(f'    <link rel="icon" href="{root}favicon.svg" type="image/svg+xml">')
+    head_meta.append(f'    <link rel="icon" href="{root}favicon.ico" sizes="any">')
     if meta.get('noindex') != 'yes':
         url = BASE_URL + ('' if name == 'index.html' else name)
         head_meta += [
@@ -69,9 +71,10 @@ def render(name, text, layout):
             f'    <meta property="og:url" content="{url}">',
         ]
     nav = ''.join(
-        '            <li class="nav-item">\n'
-        f'              <a class="nav-link{" active" if href == name else ""}" href="{root}{href}">{label}</a>\n'
-        '            </li>\n'
+        '              <li class="nav-item">'
+        + (f'<a class="nav-link active" aria-current="page" href="{root}{href}">{label}</a>'
+           if href == name else f'<a class="nav-link" href="{root}{href}">{label}</a>')
+        + '</li>\n'
         for href, label in NAV)
     values = {
         'meta': '\n'.join(head_meta) + '\n',

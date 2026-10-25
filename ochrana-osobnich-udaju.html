@@ -2,9 +2,11 @@
 <html lang="cs">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#410b88">
     <meta name="description" content="Jak účetní kancelář VLABIDEM s.r.o. nakládá s osobními údaji návštěvníků webu a lidí, kteří ji kontaktují.">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.ico" sizes="any">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="VLABIDEM s.r.o.">
     <meta property="og:locale" content="cs_CZ">
@@ -14,83 +16,113 @@
 
     <title>Ochrana osobních údajů – VLABIDEM s.r.o.</title>
 
-    <!-- Bootstrap core CSS -->
+    <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link href="bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="sticky-footer-navbar.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
   </head>
 
   <body>
+    <a class="skip-link" href="#obsah">Přeskočit na obsah</a>
 
-    <header>
-      <!-- Fixed navbar -->
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">VLABIDEM s.r.o.</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Hlavní stránka</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="taxes.html">Daně</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="economy.html">Účetnictví</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="wages.html">Mzdy</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="commissions.html">Provize</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="links.html">Odkazy</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacts.html">Kontakty</a>
-            </li>
-          </ul>
+    <header class="site-header sticky-top">
+      <nav class="navbar navbar-expand-lg" aria-label="Hlavní navigace">
+        <div class="container">
+          <a class="brand" href="index.html">
+            <img src="favicon.svg" alt="" width="36" height="36">
+            <span><span class="brand-name">VLABIDEM</span><span class="brand-tagline">účetní kancelář</span></span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Otevřít menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mx-lg-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Úvod</a></li>
+              <li class="nav-item"><a class="nav-link" href="taxes.html">Daně</a></li>
+              <li class="nav-item"><a class="nav-link" href="economy.html">Účetnictví</a></li>
+              <li class="nav-item"><a class="nav-link" href="wages.html">Mzdy</a></li>
+              <li class="nav-item"><a class="nav-link" href="commissions.html">Provize</a></li>
+              <li class="nav-item"><a class="nav-link" href="links.html">Odkazy</a></li>
+              <li class="nav-item"><a class="nav-link" href="contacts.html">Kontakty</a></li>
+            </ul>
+            <a class="btn btn-primary mb-3 mb-lg-0" href="tel:+420777715551">
+              <svg class="icon" aria-hidden="true"><use href="icons.svg#telephone"></use></svg>
+              <span>777 715 551</span>
+            </a>
+          </div>
         </div>
-       </div>
       </nav>
     </header>
 
-    <!-- Begin page content -->
-    <main role="main" class="container">
-      <h1 class="mt-5">Ochrana osobních údajů</h1>
-      <p class="lead">Jak nakládáme s osobními údaji návštěvníků tohoto webu a lidí, kteří nás kontaktují.</p>
+    <main id="obsah">
+      <header class="page-hero">
+        <div class="container">
+          <span class="eyebrow">GDPR</span>
+          <h1>Ochrana osobních údajů</h1>
+          <p class="lead">Jak nakládáme s osobními údaji návštěvníků tohoto webu a lidí, kteří nás kontaktují.</p>
+        </div>
+      </header>
 
-      <h2 class="h4 mt-4">Správce</h2>
-      <p>VLABIDEM s.r.o., Dlouhá 614/84, Horní Těrlicko, 735 42 Těrlicko, IČ: 65140630, e-mail <a href="mailto:info@vlabidem.cz">info@vlabidem.cz</a>, telefon <a href="tel:+420777715551">+420 777 715 551</a>.</p>
+      <section class="section">
+        <div class="container">
+          <div class="prose">
+            <h2 class="h4">Správce</h2>
+            <p>VLABIDEM s.r.o., Dlouhá 614/84, Horní Těrlicko, 735 42 Těrlicko, IČ: 65140630, e-mail <a href="mailto:info@vlabidem.cz">info@vlabidem.cz</a>, telefon <a href="tel:+420777715551">+420 777 715 551</a>.</p>
 
-      <h2 class="h4 mt-4">Co tento web zpracovává</h2>
-      <ul>
-        <li><strong>Žádné cookies ani analytika.</strong> Web sám nepoužívá cookies ani nástroje pro sledování návštěvnosti.</li>
-        <li><strong>Mapa.</strong> Mapa na stránce Kontakty se načte ze služby Google Maps až po kliknutí na tlačítko „Zobrazit mapu“. Teprve tehdy Google získá Vaši IP adresu a může uložit cookies podle <a href="https://policies.google.com/privacy?hl=cs" target="_blank" rel="noopener">svých zásad ochrany soukromí</a>.</li>
-        <li><strong>Serverové záznamy.</strong> Poskytovatel hostingu ukládá běžné technické záznamy o přístupech (IP adresa, čas, požadovaná stránka) pro zajištění provozu a bezpečnosti.</li>
-      </ul>
+            <h2 class="h4 mt-5">Co tento web zpracovává</h2>
+            <ul class="check-list mb-4">
+              <li><strong>Žádné cookies ani analytika.</strong> Web sám nepoužívá cookies ani nástroje pro sledování návštěvnosti.</li>
+              <li><strong>Mapa.</strong> Mapa na stránce Kontakty se načte ze služby Google Maps až po kliknutí na tlačítko „Zobrazit mapu“. Teprve tehdy Google získá Vaši IP adresu a může uložit cookies podle <a href="https://policies.google.com/privacy?hl=cs" target="_blank" rel="noopener">svých zásad ochrany soukromí</a>.</li>
+              <li><strong>Serverové záznamy.</strong> Poskytovatel hostingu ukládá běžné technické záznamy o přístupech (IP adresa, čas, požadovaná stránka) pro zajištění provozu a bezpečnosti.</li>
+            </ul>
 
-      <h2 class="h4 mt-4">Když nás kontaktujete</h2>
-      <p>Údaje z Vašeho e-mailu nebo telefonátu (jméno, kontakt, obsah dotazu) použijeme jen k vyřízení Vašeho požadavku a k případnému uzavření smlouvy. Právním základem je jednání o smlouvě a náš oprávněný zájem odpovědět na dotaz. Údaje nepředáváme dalším osobám a uchováváme je jen po dobu nezbytnou k vyřízení požadavku, u klientů po dobu, kterou vyžadují právní předpisy.</p>
+            <h2 class="h4 mt-5">Když nás kontaktujete</h2>
+            <p>Údaje z Vašeho e-mailu nebo telefonátu (jméno, kontakt, obsah dotazu) použijeme jen k vyřízení Vašeho požadavku a k případnému uzavření smlouvy. Právním základem je jednání o smlouvě a náš oprávněný zájem odpovědět na dotaz. Údaje nepředáváme dalším osobám a uchováváme je jen po dobu nezbytnou k vyřízení požadavku, u klientů po dobu, kterou vyžadují právní předpisy.</p>
 
-      <h2 class="h4 mt-4">Vaše práva</h2>
-      <p>Máte právo požadovat přístup ke svým osobním údajům, jejich opravu nebo výmaz, omezení zpracování, vznést námitku a právo na přenositelnost údajů. Stačí nám napsat na <a href="mailto:info@vlabidem.cz">info@vlabidem.cz</a>. Stížnost můžete podat u <a href="https://uoou.gov.cz" target="_blank" rel="noopener">Úřadu pro ochranu osobních údajů</a>.</p>
+            <h2 class="h4 mt-5">Vaše práva</h2>
+            <p>Máte právo požadovat přístup ke svým osobním údajům, jejich opravu nebo výmaz, omezení zpracování, vznést námitku a právo na přenositelnost údajů. Stačí nám napsat na <a href="mailto:info@vlabidem.cz">info@vlabidem.cz</a>. Stížnost můžete podat u <a href="https://uoou.gov.cz" target="_blank" rel="noopener">Úřadu pro ochranu osobních údajů</a>.</p>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer class="footer">
-      <div class="container text-center">
-        <span>© 2018–2026 VLABIDEM s.r.o. · Web vytvořil Martin Himlar · <a href="ochrana-osobnich-udaju.html">Ochrana osobních údajů</a></span>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5">
+            <a class="brand mb-3" href="index.html">
+              <img src="favicon.svg" alt="" width="36" height="36">
+              <span><span class="brand-name">VLABIDEM s.r.o.</span><span class="brand-tagline">účetní kancelář</span></span>
+            </a>
+            <p class="mb-0">Účetnictví, daňová evidence, daně a mzdy pro podnikatele a firmy. Zastupujeme klienty na úřadech a klademe důraz na osobní přístup.</p>
+          </div>
+          <div class="col-sm-5 col-lg-3">
+            <h2>Služby</h2>
+            <ul>
+              <li><a href="economy.html">Účetnictví a daňová evidence</a></li>
+              <li><a href="taxes.html">Daně</a></li>
+              <li><a href="wages.html">Mzdy a personalistika</a></li>
+              <li><a href="commissions.html">Provize za doporučení</a></li>
+              <li><a href="links.html">Užitečné odkazy</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-7 col-lg-4">
+            <h2>Kontakt</h2>
+            <address class="mb-0">
+              VLABIDEM s.r.o.<br>
+              Dlouhá 614/84, Horní Těrlicko<br>
+              735 42 Těrlicko<br>
+              <a href="tel:+420777715551">+420 777 715 551</a><br>
+              <a href="mailto:info@vlabidem.cz">info@vlabidem.cz</a>
+            </address>
+          </div>
+        </div>
+        <div class="footer-bottom d-flex flex-column flex-lg-row gap-2 justify-content-between">
+          <span>© 2018–2026 VLABIDEM s.r.o. · IČ 65140630 · zapsaná v obchodním rejstříku u Krajského soudu v Ostravě, oddíl C, vložka 14572</span>
+          <span>Web vytvořil Martin Himlar · <a href="ochrana-osobnich-udaju.html">Ochrana osobních údajů</a></span>
+        </div>
       </div>
     </footer>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
     <script src="bootstrap.bundle.min.js"></script>
   </body>
 </html>

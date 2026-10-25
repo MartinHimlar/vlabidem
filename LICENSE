@@ -6,3 +6,6 @@ a bez jejího souhlasu je nelze dále šířit ani upravovat.
 Součásti třetích stran si ponechávají vlastní licenci:
 - Bootstrap (bootstrap.min.css, bootstrap.bundle.min.js) – MIT License,
   https://github.com/twbs/bootstrap/blob/main/LICENSE
+- Bootstrap Icons (icons.svg) – MIT License,
+  https://github.com/twbs/icons/blob/main/LICENSE
+- Inter (fonts/*.woff2) – SIL Open Font License 1.1, viz fonts/OFL.txt
