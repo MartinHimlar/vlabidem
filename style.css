@@ -16,7 +16,10 @@ h1, h2, h3, h4, h5, h6{
     color: #714dca;
 }
 
-/* Bootstrap 5 dropped .text-justify */
-.text-justify {
-    text-align: justify !important;
+/* Bootstrap 5 dropped .text-justify; justify only on wider screens,
+   narrow columns get large gaps between words */
+@media (min-width: 768px) {
+    .text-justify {
+        text-align: justify !important;
+    }
 }
