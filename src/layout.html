@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{{meta}}
+    <title>{{title}}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{root}}bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{root}}sticky-footer-navbar.css" rel="stylesheet">
+    <link href="{{root}}style.css" rel="stylesheet">
+{{head}}  </head>
+
+  <body>
+
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+       <div class="container-fluid">
+        <a class="navbar-brand" href="{{root}}index.html">VLABIDEM s.r.o.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto">
+{{nav}}          </ul>
+        </div>
+       </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+{{body}}    <footer class="footer">
+      <div class="container text-center">
+        <span>© 2018–{{year}} VLABIDEM s.r.o. · Web vytvořil Martin Himlar · <a href="{{root}}ochrana-osobnich-udaju.html">Ochrana osobních údajů</a></span>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="{{root}}bootstrap.bundle.min.js"></script>
+{{scripts}}  </body>
+</html>
