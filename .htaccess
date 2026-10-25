@@ -1,6 +1,12 @@
 ## Default .htaccess file
 
 ErrorDocument 404 /404.html
+
+# Types for the self-hosted font and SVG icons, in case the server lacks them
+<IfModule mod_mime.c>
+  AddType font/woff2 .woff2
+  AddType image/svg+xml .svg
+</IfModule>
 Redirect 301 /commisions.html /commissions.html
 
 # Compression

@@ -2,36 +2,62 @@
 title: Kontakty – VLABIDEM s.r.o., Těrlicko
 description: Kontakty na účetní kancelář VLABIDEM s.r.o.: Dlouhá 614/84, Horní Těrlicko, telefon +420 777 715 551, info@vlabidem.cz.
 ---
-    <main role="main" class="container">
-      <h1 class="mt-5 h2">Kontakty</h1>
-      <div class="row text-center">
-        <table class="col">
-            <tr>
-                <td class="align-top">Jednatel<br>Vlasta Biščáková<br><a class="text-nowrap" href="tel:+420777715551">+420 777 715 551</a><br><a href="mailto:info@vlabidem.cz">info@vlabidem.cz</a></td>
-                <td class="align-top">Mzdový účetní<br>Přemysl Himlar<br><a class="text-nowrap" href="tel:+420777715545">+420 777 715 545</a><br><a href="mailto:himlar@vlabidem.cz">himlar@vlabidem.cz</a></td>
-                <td class="align-top">Dlouhá 614/84<br>Těrlicko - Horní Těrlicko<br>735 42<br>IČ: 65140630</td>
-            </tr>
-        </table>
-      </div>
-      <p class="text-center small text-body-secondary mt-4">
-        VLABIDEM s.r.o., sídlo Dlouhá 614/84, Horní Těrlicko, 735 42 Těrlicko, IČ: 65140630<br>
-        zapsaná v obchodním rejstříku vedeném Krajským soudem v Ostravě, oddíl C, vložka 14572
-      </p>
-    </main>
-
-    <!-- Map at 90 % of the screen width, 16:9. Loaded only on request: Google sets cookies as soon as the iframe loads -->
-    <section class="map-section" aria-label="Mapa">
-      <div class="ratio ratio-16x9" id="map">
-        <div class="d-flex flex-column align-items-center justify-content-center text-center bg-body-tertiary p-3">
-          <p>Mapa se načítá ze služby Google Maps, která může ukládat cookies.</p>
-          <button type="button" class="btn btn-primary" id="map-load">Zobrazit mapu</button>
+      <header class="page-hero">
+        <div class="container">
+          <span class="eyebrow">Kontakty</span>
+          <h1>Jsme tu pro Vás</h1>
+          <p class="lead">Zavolejte nebo napište – rádi se s Vámi domluvíme na spolupráci.</p>
         </div>
-      </div>
-      <p class="text-center small mt-2">
-        Otevřít v <a href="https://www.google.com/maps/d/viewer?mid=1Tl_01W6rHgPATqbIgLXfPuEb_VzyeVvQ" target="_blank" rel="noopener">Google Maps</a>
-        nebo <a href="https://mapy.cz/zakladni?q=Dlouh%C3%A1%20614%2F84%2C%20T%C4%9Brlicko" target="_blank" rel="noopener">Mapy.cz</a>
-      </p>
-    </section>
+      </header>
+
+      <section class="section">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card-soft contact-card">
+                <p class="role">Jednatel</p>
+                <h2 class="name">Vlasta Biščáková</h2>
+                <a class="contact-line text-nowrap" href="tel:+420777715551"><svg class="icon" aria-hidden="true"><use href="icons.svg#telephone"></use></svg>+420 777 715 551</a>
+                <a class="contact-line" href="mailto:info@vlabidem.cz"><svg class="icon" aria-hidden="true"><use href="icons.svg#envelope"></use></svg>info@vlabidem.cz</a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card-soft contact-card">
+                <p class="role">Sídlo</p>
+                <h2 class="name">VLABIDEM s.r.o.</h2>
+                <address class="contact-line align-items-start mb-0"><svg class="icon mt-1" aria-hidden="true"><use href="icons.svg#geo-alt"></use></svg><span>Dlouhá 614/84<br>Těrlicko - Horní Těrlicko<br>735 42</span></address>
+                <p class="contact-line mb-0"><svg class="icon" aria-hidden="true"><use href="icons.svg#building"></use></svg>IČ: 65140630</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card-soft contact-card">
+                <p class="role">Provozovna</p>
+                <h2 class="name">VLABIDEM s.r.o.</h2>
+                <address class="contact-line align-items-start mb-0"><svg class="icon mt-1" aria-hidden="true"><use href="icons.svg#geo-alt"></use></svg><span>Slévárenská 408/18<br>Ostrava - Mariánské Hory<br>709 00</span></address>
+              </div>
+            </div>
+          </div>
+          <p class="legal-note text-center mt-4 mb-0">
+            VLABIDEM s.r.o., sídlo Dlouhá 614/84, Horní Těrlicko, 735 42 Těrlicko, IČ: 65140630<br>
+            zapsaná v obchodním rejstříku vedeném Krajským soudem v Ostravě, oddíl C, vložka 14572
+          </p>
+        </div>
+      </section>
+
+      <!-- Map at 90 % of the screen width, 16:9. Loaded only on request: Google sets cookies as soon as the iframe loads -->
+      <section class="map-section" aria-label="Mapa">
+        <div class="ratio ratio-16x9" id="map">
+          <div class="map-placeholder d-flex flex-column align-items-center justify-content-center text-center p-3">
+            <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="icons.svg#geo-alt"></use></svg></span>
+            <p class="text-body-secondary">Mapa se načítá ze služby Google Maps, která může ukládat cookies.</p>
+            <button type="button" class="btn btn-primary" id="map-load">Zobrazit mapu</button>
+          </div>
+        </div>
+        <p class="text-center small mt-3 mb-0">
+          Otevřít v <a href="https://www.google.com/maps/d/viewer?mid=1Tl_01W6rHgPATqbIgLXfPuEb_VzyeVvQ" target="_blank" rel="noopener">Google Maps</a>
+          nebo <a href="https://mapy.cz/zakladni?q=Dlouh%C3%A1%20614%2F84%2C%20T%C4%9Brlicko" target="_blank" rel="noopener">Mapy.cz</a>
+        </p>
+      </section>
 
 <!-- @scripts -->
     <script>

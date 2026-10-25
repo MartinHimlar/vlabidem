@@ -2,9 +2,11 @@
 <html lang="cs">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#410b88">
     <meta name="description" content="Zpracování přiznání k dani z příjmů, DPH, souhrnného a kontrolního hlášení a silniční dani, zastupování při kontrolách finančního úřadu.">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.ico" sizes="any">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="VLABIDEM s.r.o.">
     <meta property="og:locale" content="cs_CZ">
@@ -14,90 +16,143 @@
 
     <title>Daně – VLABIDEM s.r.o., účetní kancelář</title>
 
-    <!-- Bootstrap core CSS -->
+    <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link href="bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="sticky-footer-navbar.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
   </head>
 
   <body>
+    <a class="skip-link" href="#obsah">Přeskočit na obsah</a>
 
-    <header>
-      <!-- Fixed navbar -->
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">VLABIDEM s.r.o.</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Hlavní stránka</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="taxes.html">Daně</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="economy.html">Účetnictví</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="wages.html">Mzdy</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="commissions.html">Provize</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="links.html">Odkazy</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacts.html">Kontakty</a>
-            </li>
-          </ul>
+    <header class="site-header sticky-top">
+      <nav class="navbar navbar-expand-lg" aria-label="Hlavní navigace">
+        <div class="container">
+          <a class="brand" href="index.html">
+            <img src="favicon.svg" alt="" width="36" height="36">
+            <span><span class="brand-name">VLABIDEM</span><span class="brand-tagline">účetní kancelář</span></span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Otevřít menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mx-lg-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Úvod</a></li>
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="taxes.html">Daně</a></li>
+              <li class="nav-item"><a class="nav-link" href="economy.html">Účetnictví</a></li>
+              <li class="nav-item"><a class="nav-link" href="wages.html">Mzdy</a></li>
+              <li class="nav-item"><a class="nav-link" href="commissions.html">Provize</a></li>
+              <li class="nav-item"><a class="nav-link" href="links.html">Odkazy</a></li>
+              <li class="nav-item"><a class="nav-link" href="contacts.html">Kontakty</a></li>
+            </ul>
+            <a class="btn btn-primary mb-3 mb-lg-0" href="tel:+420777715551">
+              <svg class="icon" aria-hidden="true"><use href="icons.svg#telephone"></use></svg>
+              <span>777 715 551</span>
+            </a>
+          </div>
         </div>
-       </div>
       </nav>
     </header>
 
-    <!-- Begin page content -->
-    <main role="main" class="container">
-        <h1 class="mt-5">Daňová přiznání</h1>
+    <main id="obsah">
+      <header class="page-hero">
+        <div class="container">
+          <span class="eyebrow">Služby</span>
+          <h1>Daňová přiznání</h1>
+          <p class="lead">Připravíme a podáme daňová přiznání a hlášení, jednáme za Vás s finančním úřadem a průběžně Vás informujeme o chystaných změnách.</p>
+        </div>
+      </header>
 
-	<h2 class="h4">Daně z příjmů</h2>
-	<ul>
-		<li>průběžné daňové poradenství a informace k účetní závěrce</li>
-		<li>zpracování daňového přiznání</li>
-		<li>jednání s finančními úřady a zastupování při kontrolách správce daně</li>
-		<li>zpracování ročních přehledů pro OSSZ a ZP</li>
-		<li>digitalizace a uložení povinných dokumentů v obchodním rejstříku</li>
-		<li>možnost odkladu termínu pro podání daňového přiznání</li>
-	</ul>
+      <section class="section">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-lg-3 g-4">
+            <div class="col">
+              <div class="card-soft">
+                <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="icons.svg#file-earmark-text"></use></svg></span>
+                <h2 class="h4 mb-3">Daně z příjmů</h2>
+                <ul class="check-list">
+                  <li>průběžné daňové poradenství a informace k účetní závěrce</li>
+                  <li>zpracování daňového přiznání</li>
+                  <li>jednání s finančními úřady a zastupování při kontrolách správce daně</li>
+                  <li>zpracování ročních přehledů pro OSSZ a ZP</li>
+                  <li>digitalizace a uložení povinných dokumentů v obchodním rejstříku</li>
+                  <li>možnost odkladu termínu pro podání daňového přiznání</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card-soft">
+                <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="icons.svg#bank"></use></svg></span>
+                <h2 class="h4 mb-3">Daň z přidané hodnoty</h2>
+                <ul class="check-list">
+                  <li>zpracování daňového přiznání a jeho elektronické podání na příslušný finanční úřad</li>
+                  <li>zpracování souhrnného hlášení</li>
+                  <li>zpracování kontrolního hlášení</li>
+                  <li>pravidelné informování klienta o chystaných změnách</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card-soft">
+                <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="icons.svg#clock-history"></use></svg></span>
+                <h2 class="h4 mb-3">Silniční daň</h2>
+                <ul class="check-list">
+                  <li>zpracování daňového přiznání</li>
+                  <li>vypracování přehledu o platbě záloh na následující rok</li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-	<h2 class="h4">Daň z přidané hodnoty</h2>
-	<ul>
-		<li>zpracování daňového přiznání a jeho elektronické podání na příslušný finanční úřad</li>
-		<li>zpracování souhrnného hlášení</li>
-		<li>zpracování kontrolního hlášení</li>
-		<li>pravidelné informování klienta o chystaných změnách</li>
-	</ul>
-
-	<h2 class="h4">Silniční daň</h2>
-	<ul>
-		<li>zpracování daňového přiznání</li>
-		<li>vypracování přehledu o platbě záloh na následující rok</li>
-	</ul>
+          <div class="cta-band mt-5 d-lg-flex align-items-center justify-content-between gap-4">
+            <div>
+              <h2 class="h4">Blíží se termín přiznání?</h2>
+              <p class="mb-lg-0">Ozvěte se nám včas – zajistíme i odklad termínu pro podání daňového přiznání.</p>
+            </div>
+            <a class="btn btn-light flex-shrink-0" href="contacts.html">Kontaktujte nás
+              <svg class="icon" aria-hidden="true"><use href="icons.svg#arrow-right"></use></svg></a>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer class="footer">
-      <div class="container text-center">
-        <span>© 2018–2026 VLABIDEM s.r.o. · Web vytvořil Martin Himlar · <a href="ochrana-osobnich-udaju.html">Ochrana osobních údajů</a></span>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5">
+            <a class="brand mb-3" href="index.html">
+              <img src="favicon.svg" alt="" width="36" height="36">
+              <span><span class="brand-name">VLABIDEM s.r.o.</span><span class="brand-tagline">účetní kancelář</span></span>
+            </a>
+            <p class="mb-0">Účetnictví, daňová evidence, daně a mzdy pro podnikatele a firmy. Zastupujeme klienty na úřadech a klademe důraz na osobní přístup.</p>
+          </div>
+          <div class="col-sm-5 col-lg-3">
+            <h2>Služby</h2>
+            <ul>
+              <li><a href="economy.html">Účetnictví a daňová evidence</a></li>
+              <li><a href="taxes.html">Daně</a></li>
+              <li><a href="wages.html">Mzdy a personalistika</a></li>
+              <li><a href="commissions.html">Provize za doporučení</a></li>
+              <li><a href="links.html">Užitečné odkazy</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-7 col-lg-4">
+            <h2>Kontakt</h2>
+            <address class="mb-0">
+              VLABIDEM s.r.o.<br>
+              Dlouhá 614/84, Horní Těrlicko<br>
+              735 42 Těrlicko<br>
+              <a href="tel:+420777715551">+420 777 715 551</a><br>
+              <a href="mailto:info@vlabidem.cz">info@vlabidem.cz</a>
+            </address>
+          </div>
+        </div>
+        <div class="footer-bottom d-flex flex-column flex-lg-row gap-2 justify-content-between">
+          <span>© 2018–2026 VLABIDEM s.r.o. · IČ 65140630 · zapsaná v obchodním rejstříku u Krajského soudu v Ostravě, oddíl C, vložka 14572</span>
+          <span>Web vytvořil Martin Himlar · <a href="ochrana-osobnich-udaju.html">Ochrana osobních údajů</a></span>
+        </div>
       </div>
     </footer>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
     <script src="bootstrap.bundle.min.js"></script>
   </body>
 </html>

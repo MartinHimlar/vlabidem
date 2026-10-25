@@ -2,9 +2,11 @@
 <html lang="cs">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#410b88">
     <meta name="description" content="Kontakty na účetní kancelář VLABIDEM s.r.o.: Dlouhá 614/84, Horní Těrlicko, telefon +420 777 715 551, info@vlabidem.cz.">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.ico" sizes="any">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="VLABIDEM s.r.o.">
     <meta property="og:locale" content="cs_CZ">
@@ -14,93 +16,141 @@
 
     <title>Kontakty – VLABIDEM s.r.o., Těrlicko</title>
 
-    <!-- Bootstrap core CSS -->
+    <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link href="bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="sticky-footer-navbar.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
   </head>
 
   <body>
+    <a class="skip-link" href="#obsah">Přeskočit na obsah</a>
 
-    <header>
-      <!-- Fixed navbar -->
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">VLABIDEM s.r.o.</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Hlavní stránka</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="taxes.html">Daně</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="economy.html">Účetnictví</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="wages.html">Mzdy</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="commissions.html">Provize</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="links.html">Odkazy</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="contacts.html">Kontakty</a>
-            </li>
-          </ul>
+    <header class="site-header sticky-top">
+      <nav class="navbar navbar-expand-lg" aria-label="Hlavní navigace">
+        <div class="container">
+          <a class="brand" href="index.html">
+            <img src="favicon.svg" alt="" width="36" height="36">
+            <span><span class="brand-name">VLABIDEM</span><span class="brand-tagline">účetní kancelář</span></span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Otevřít menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mx-lg-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Úvod</a></li>
+              <li class="nav-item"><a class="nav-link" href="taxes.html">Daně</a></li>
+              <li class="nav-item"><a class="nav-link" href="economy.html">Účetnictví</a></li>
+              <li class="nav-item"><a class="nav-link" href="wages.html">Mzdy</a></li>
+              <li class="nav-item"><a class="nav-link" href="commissions.html">Provize</a></li>
+              <li class="nav-item"><a class="nav-link" href="links.html">Odkazy</a></li>
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacts.html">Kontakty</a></li>
+            </ul>
+            <a class="btn btn-primary mb-3 mb-lg-0" href="tel:+420777715551">
+              <svg class="icon" aria-hidden="true"><use href="icons.svg#telephone"></use></svg>
+              <span>777 715 551</span>
+            </a>
+          </div>
         </div>
-       </div>
       </nav>
     </header>
 
-    <!-- Begin page content -->
-    <main role="main" class="container">
-      <h1 class="mt-5 h2">Kontakty</h1>
-      <div class="row text-center">
-        <table class="col">
-            <tr>
-                <td class="align-top">Jednatel<br>Vlasta Biščáková<br><a class="text-nowrap" href="tel:+420777715551">+420 777 715 551</a><br><a href="mailto:info@vlabidem.cz">info@vlabidem.cz</a></td>
-                <td class="align-top">Mzdový účetní<br>Přemysl Himlar<br><a class="text-nowrap" href="tel:+420777715545">+420 777 715 545</a><br><a href="mailto:himlar@vlabidem.cz">himlar@vlabidem.cz</a></td>
-                <td class="align-top">Dlouhá 614/84<br>Těrlicko - Horní Těrlicko<br>735 42<br>IČ: 65140630</td>
-            </tr>
-        </table>
-      </div>
-      <p class="text-center small text-body-secondary mt-4">
-        VLABIDEM s.r.o., sídlo Dlouhá 614/84, Horní Těrlicko, 735 42 Těrlicko, IČ: 65140630<br>
-        zapsaná v obchodním rejstříku vedeném Krajským soudem v Ostravě, oddíl C, vložka 14572
-      </p>
+    <main id="obsah">
+      <header class="page-hero">
+        <div class="container">
+          <span class="eyebrow">Kontakty</span>
+          <h1>Jsme tu pro Vás</h1>
+          <p class="lead">Zavolejte nebo napište – rádi se s Vámi domluvíme na spolupráci.</p>
+        </div>
+      </header>
+
+      <section class="section">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card-soft contact-card">
+                <p class="role">Jednatel</p>
+                <h2 class="name">Vlasta Biščáková</h2>
+                <a class="contact-line text-nowrap" href="tel:+420777715551"><svg class="icon" aria-hidden="true"><use href="icons.svg#telephone"></use></svg>+420 777 715 551</a>
+                <a class="contact-line" href="mailto:info@vlabidem.cz"><svg class="icon" aria-hidden="true"><use href="icons.svg#envelope"></use></svg>info@vlabidem.cz</a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card-soft contact-card">
+                <p class="role">Sídlo</p>
+                <h2 class="name">VLABIDEM s.r.o.</h2>
+                <address class="contact-line align-items-start mb-0"><svg class="icon mt-1" aria-hidden="true"><use href="icons.svg#geo-alt"></use></svg><span>Dlouhá 614/84<br>Těrlicko - Horní Těrlicko<br>735 42</span></address>
+                <p class="contact-line mb-0"><svg class="icon" aria-hidden="true"><use href="icons.svg#building"></use></svg>IČ: 65140630</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card-soft contact-card">
+                <p class="role">Provozovna</p>
+                <h2 class="name">VLABIDEM s.r.o.</h2>
+                <address class="contact-line align-items-start mb-0"><svg class="icon mt-1" aria-hidden="true"><use href="icons.svg#geo-alt"></use></svg><span>Slévárenská 408/18<br>Ostrava - Mariánské Hory<br>709 00</span></address>
+              </div>
+            </div>
+          </div>
+          <p class="legal-note text-center mt-4 mb-0">
+            VLABIDEM s.r.o., sídlo Dlouhá 614/84, Horní Těrlicko, 735 42 Těrlicko, IČ: 65140630<br>
+            zapsaná v obchodním rejstříku vedeném Krajským soudem v Ostravě, oddíl C, vložka 14572
+          </p>
+        </div>
+      </section>
+
+      <!-- Map at 90 % of the screen width, 16:9. Loaded only on request: Google sets cookies as soon as the iframe loads -->
+      <section class="map-section" aria-label="Mapa">
+        <div class="ratio ratio-16x9" id="map">
+          <div class="map-placeholder d-flex flex-column align-items-center justify-content-center text-center p-3">
+            <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="icons.svg#geo-alt"></use></svg></span>
+            <p class="text-body-secondary">Mapa se načítá ze služby Google Maps, která může ukládat cookies.</p>
+            <button type="button" class="btn btn-primary" id="map-load">Zobrazit mapu</button>
+          </div>
+        </div>
+        <p class="text-center small mt-3 mb-0">
+          Otevřít v <a href="https://www.google.com/maps/d/viewer?mid=1Tl_01W6rHgPATqbIgLXfPuEb_VzyeVvQ" target="_blank" rel="noopener">Google Maps</a>
+          nebo <a href="https://mapy.cz/zakladni?q=Dlouh%C3%A1%20614%2F84%2C%20T%C4%9Brlicko" target="_blank" rel="noopener">Mapy.cz</a>
+        </p>
+      </section>
+
     </main>
 
-    <!-- Map at 90 % of the screen width, 16:9. Loaded only on request: Google sets cookies as soon as the iframe loads -->
-    <section class="map-section" aria-label="Mapa">
-      <div class="ratio ratio-16x9" id="map">
-        <div class="d-flex flex-column align-items-center justify-content-center text-center bg-body-tertiary p-3">
-          <p>Mapa se načítá ze služby Google Maps, která může ukládat cookies.</p>
-          <button type="button" class="btn btn-primary" id="map-load">Zobrazit mapu</button>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5">
+            <a class="brand mb-3" href="index.html">
+              <img src="favicon.svg" alt="" width="36" height="36">
+              <span><span class="brand-name">VLABIDEM s.r.o.</span><span class="brand-tagline">účetní kancelář</span></span>
+            </a>
+            <p class="mb-0">Účetnictví, daňová evidence, daně a mzdy pro podnikatele a firmy. Zastupujeme klienty na úřadech a klademe důraz na osobní přístup.</p>
+          </div>
+          <div class="col-sm-5 col-lg-3">
+            <h2>Služby</h2>
+            <ul>
+              <li><a href="economy.html">Účetnictví a daňová evidence</a></li>
+              <li><a href="taxes.html">Daně</a></li>
+              <li><a href="wages.html">Mzdy a personalistika</a></li>
+              <li><a href="commissions.html">Provize za doporučení</a></li>
+              <li><a href="links.html">Užitečné odkazy</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-7 col-lg-4">
+            <h2>Kontakt</h2>
+            <address class="mb-0">
+              VLABIDEM s.r.o.<br>
+              Dlouhá 614/84, Horní Těrlicko<br>
+              735 42 Těrlicko<br>
+              <a href="tel:+420777715551">+420 777 715 551</a><br>
+              <a href="mailto:info@vlabidem.cz">info@vlabidem.cz</a>
+            </address>
+          </div>
         </div>
-      </div>
-      <p class="text-center small mt-2">
-        Otevřít v <a href="https://www.google.com/maps/d/viewer?mid=1Tl_01W6rHgPATqbIgLXfPuEb_VzyeVvQ" target="_blank" rel="noopener">Google Maps</a>
-        nebo <a href="https://mapy.cz/zakladni?q=Dlouh%C3%A1%20614%2F84%2C%20T%C4%9Brlicko" target="_blank" rel="noopener">Mapy.cz</a>
-      </p>
-    </section>
-
-    <footer class="footer">
-      <div class="container text-center">
-        <span>© 2018–2026 VLABIDEM s.r.o. · Web vytvořil Martin Himlar · <a href="ochrana-osobnich-udaju.html">Ochrana osobních údajů</a></span>
+        <div class="footer-bottom d-flex flex-column flex-lg-row gap-2 justify-content-between">
+          <span>© 2018–2026 VLABIDEM s.r.o. · IČ 65140630 · zapsaná v obchodním rejstříku u Krajského soudu v Ostravě, oddíl C, vložka 14572</span>
+          <span>Web vytvořil Martin Himlar · <a href="ochrana-osobnich-udaju.html">Ochrana osobních údajů</a></span>
+        </div>
       </div>
     </footer>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
     <script src="bootstrap.bundle.min.js"></script>
     <script>
       document.getElementById('map-load').addEventListener('click', function () {

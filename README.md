@@ -31,7 +31,10 @@ Nová stránka do menu: doplnit ji do `NAV` v `build.py`.
 | `contacts.html` | kontakty, údaje z obchodního rejstříku, mapa |
 | `ochrana-osobnich-udaju.html` | ochrana osobních údajů |
 | `404.html` | stránka „nenalezeno“ |
-| `style.css`, `sticky-footer-navbar.css` | vlastní styly |
+| `style.css` | vlastní styly (barvy a design jsou v proměnných na začátku souboru) |
+| `icons.svg` | ikony (Bootstrap Icons) jako SVG sprite, použití `<svg class="icon"><use href="icons.svg#telephone"></use></svg>` |
+| `fonts/` | písmo Inter, hostované u nás (žádné Google Fonts) |
+| `favicon.svg`, `favicon.ico` | logo / ikona webu |
 | `.htaccess` | konfigurace Apache (chybová stránka, přesměrování) |
 | `robots.txt`, `sitemap.xml` | pro vyhledávače |
 
